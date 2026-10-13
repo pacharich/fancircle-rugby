@@ -163,8 +163,7 @@ const MALES = [
       ['趣味', '水泳・ゲーム（身体作りのため筋トレも実施）'],
       ['ピアス', '左耳のみ穴1つ']
     ],
-    videos: ['https://youtu.be/KkKyA42rTEs'],
-    cardNote: '写真 選定中',
+    videos: [],
     achievementTitle: '活動実績',
     achievementSections: [
       { title: '撮影モデル（2018年12月〜）', items: [
