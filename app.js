@@ -2,7 +2,7 @@
 //  Fan Circle株式会社 様｜JAPAN RUGBY SAKURA CLUB 入会記念品グッズ着用撮影
 //  モデル候補資料（初稿 / 2026年10月版）
 //  募集：男性1名・女性1名（クライアントが候補から選定）
-//  女性4名（マイカ／モカ／アイ／ユイ）、男性3名は詳細待ちのため枠のみ。
+//  女性4名（マイカ／モカ／アイ／ユイ）、男性3名（せいき／ゆうき／ショーン）。
 // =====================================================================
 
 // ============ 撮影日 / 出演可否 ============
@@ -12,7 +12,7 @@ const SCHEDULE_DATES = ['10/24（土）'];
 const SHOOT = [{ date: '10/24（土）10:00〜11:30', status: 'pending' }];
 const AVAILABILITY = {
   maika: SHOOT, moka: SHOOT, ai: SHOOT, yui: SHOOT,
-  male1: SHOOT, male2: SHOOT, male3: SHOOT,
+  seiki: SHOOT, yuki: SHOOT, sean: SHOOT,
 };
 
 const PLACEHOLDER = '情報待ち';
@@ -118,13 +118,71 @@ const FEMALES = [
   },
 ];
 
-// 男性3名：詳細は追って受領。枠のみ確保（情報待ち表示）。
-const MALES = [1, 2, 3].map(n => ({
-  id: 'male' + n, name: '男性モデル ' + n, age: PLACEHOLDER,
-  height: PLACEHOLDER, size: PLACEHOLDER, shoe: null, exp: NA,
-  location: PLACEHOLDER, extra: [], videos: [],
-  cardNote: 'プロフィール・写真 追加予定',
-}));
+// 男性3名（掲載順：せいき／ゆうき／ショーン）
+const MALES = [
+  // 1. せいき
+  {
+    id: 'seiki', name: 'せいき', age: 29,
+    height: 182, size: 'C 95cm / W 73cm / H 98cm',
+    shoe: '27.5cm', clothesSize: 'L', hairColor: 'Black',
+    exp: 6, location: '東京都',
+    achievementTitle: 'ブライダルモデル活動実績',
+    achievementNote: '※全て新郎役での出演',
+    achievements: [
+      'ウェスティンホテル横浜','セントレジデンスホテル大阪','ワタベウェディング',
+      'プラチナドレススタイル','ドレリッチ横浜','ONE LIFE 横浜','fanta dress',
+      'アンテリーベウェディング','京都ノーザンチャーチ北山教会',
+      'ノートルダム横浜 みなとみらい','ラバンク ドロア横浜結婚式場',
+      'ウェディングドレスブランド ituwa（イツワ）','スタジオマーリン 韓国フォトスタジオ',
+    ]
+  },
+  // 2. ゆうき
+  {
+    id: 'yuki', name: 'ゆうき', age: 28,
+    height: 181, size: 'B 85cm / W 79cm / H 93cm',
+    exp: 5, location: '東京都',
+    achievementTitle: 'ブライダルモデル活動実績',
+    achievementNote: '※全て新郎役での出演',
+    achievements: [
+      'ホテルオークラ東京','アウトリガーリーフ（Hawaii🇺🇸）','ホテル雅叙園東京',
+      'ホテル椿山荘東京','ウェスティンホテル横浜','サンシャイン水族館','東京大神宮',
+      'JRホテルクレメント徳島','ヒカリフルコート高崎','ロイヤルチェスター太田',
+      'ベルブランシェ天童','リーガロイヤルホテル京都','シェラトン東京ベイ',
+    ]
+  },
+  // 3. ショーン
+  {
+    id: 'sean', name: 'ショーン', age: 34,
+    height: 172, size: 'B 94cm / W 76cm / H 93cm',
+    shoe: '28.0cm', exp: NA, location: '大分県出身',
+    extra: [['体重', '70kg'], ['プロフィール', '南アフリカ共和国と日本のハーフ（日本国籍）'], ['ピアス', '左耳に穴1つ']],
+    videos: ['https://youtu.be/KkKyA42rTEs'],
+    cardNote: '写真 選定中',
+    achievementTitle: '活動実績',
+    achievementSections: [
+      { title: '撮影モデル（EC・Web・広告）', items: [
+        '自衛隊ショップ零 アパレルEC', 'WRC OFFICIAL SHOP アパレルEC', 'スーパースポーツゼビオ アパレルEC',
+        'Shreel アパレルEC', 'UNLIMITED PWC 2025年ウェットスーツEC', 'オーシャンスポーツ BILLABONG 2025年ウェットスーツEC',
+        'tennis365.net NEWERAコラボウェア第3弾EC', 'ボディスプラウト ゴルフパンツ PV・EC', 'Double Eagle ゴルフショップPV',
+        'Byzoom fitness 筋トレ器具EC', '青成堂 サウナウェア HEATTRAP EC', 'MARCHON 眼鏡・サングラスEC',
+        'ANDROSOPHY 抱っこ紐EC', 'PIENA アクセサリーEC', 'エムディワール GUSCIO UOMO バッグEC',
+        'HOL Puente アクセサリーEC', 'ルクスフォリア リュック商品PV', 'BACCI「トトノウマット」Webページ',
+        '株式会社iruka 折り畳み自転車 Webサイト', '石國商店「KUNISTEIN」「Rocotte」ブランドサイト',
+        'YAMAHA「YAMAHA e-RIDE BASE」Webページ', 'ニコン「てくてくカメラ」第30回ナビゲーター',
+        'マイナビニュース キャンプ記事', 'ブルーオリオン「ハンサムラボ」サービス紹介ページ', 'SNS広告 多数' ] },
+      { title: 'CM・PV・MV', items: [
+        'KDDI BUSINESS WebCM', 'ヨドバシカメラ 商品PV 多数', 'Brosh オールウォッシュPV（メインキャスト）',
+        'Cao「歩み」MV（メインキャスト）', 'This is LAST「おやすみ」MV', 'シンヴァンキッシュハイスクール MV' ] },
+      { title: '演技（セリフあり）', items: [
+        'メンズライフクリニック TikTok「男の夜の相談室」メインキャスト', 'YouTube「バンカラジオ」サブキャスト 多数',
+        'YouTube「極楽レンジャー」リポーター 多数', 'YouTubeドラマ「鬼道伝説」ケント役',
+        'YouTubeドラマ「実写版ストリートファイター」ケン役' ] },
+      { title: 'ショー・イベント', items: [
+        'ジュエリーサロンスカーレット「スカーレットパーティー2025」ショーモデル',
+        '2024年 フォーミュラE東京 グリッドアンバサダー', 'ヘアモデル（2012年〜）大会・宣材・カタログ' ] }
+    ]
+  },
+];
 
 // 番号ラベルの接頭辞（旧テンプレートの「新婦役／新郎役」に代わる中立表記）
 const NUM_PREFIX = 'MODEL ';
@@ -269,7 +327,9 @@ function renderLightbox() {
   if (m.shoe) { specShoe.style.display = ''; $('#lbShoe').textContent = m.shoe; }
   else { specShoe.style.display = 'none'; }
 
-  $('#specExp').style.display = 'none';
+  // 芸歴は数値（年）がある場合のみ表示
+  if (typeof m.exp === 'number') { $('#specExp').style.display = ''; $('#lbExp').textContent = expDisp(m.exp); }
+  else { $('#specExp').style.display = 'none'; }
 
   const specHair = $('#specHair'), specEye = $('#specEye'), specClothes = $('#specClothes');
   if (m.hairColor) { specHair.style.display = ''; $('#lbHair').textContent = m.hairColor; } else { specHair.style.display = 'none'; }
