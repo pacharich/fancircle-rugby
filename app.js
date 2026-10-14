@@ -24,7 +24,7 @@ const FEMALES = [
   // 1. マイカ
   {
     id: 'maika', name: 'マイカ', age: 29,
-    height: 154, size: 'B 77cm / W 55cm / H 80cm',
+    height: 156, size: 'B 77cm / W 55cm / H 80cm',
     shoe: '22.5cm', hairColor: 'ナチュラルブラウン', exp: NA, location: '東京都（千葉県出身）',
     extra: [['体重', '40kg'], ['運転免許', 'あり']],
     videos: ['https://youtube.com/shorts/f3myIYxLkAc', 'https://youtube.com/shorts/QnyfSmSqNGI'],
@@ -102,7 +102,7 @@ const FEMALES = [
   },
   // 4. ユイ
   {
-    id: 'yui', name: 'ユイ', age: 26,
+    id: 'yui', name: 'ユイ', age: 27,
     height: 157.8, size: '非公開', shoe: null, exp: NA, location: '東京都板橋区',
     extra: [['体重', '43kg']],
     videos: ['https://youtube.com/shorts/flXNOUvtkCw'],
@@ -170,8 +170,8 @@ const MALES = [
   },
   // 3. ショーン
   {
-    id: 'sean', name: 'ショーン', age: 34,
-    height: 172, size: 'B 94cm / W 76cm / H 93cm',
+    id: 'sean', name: 'ショーン', age: 33,
+    height: 173, size: 'B 94cm / W 76cm / H 93cm',
     shoe: '28.0cm', exp: NA, location: '大分県出身',
     extra: [
       ['体重', '約70kg'], ['頭囲', '57.5cm'], ['首回り', '34.5cm'], ['肩幅', '45cm'],
